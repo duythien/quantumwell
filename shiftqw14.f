@@ -1,4 +1,3 @@
-
       PROGRAM main
       PARAMETER(pi=3.14159,nzx=300,NBX=22,nkx=35,NC=4,NV=8)
       REAL L0,L1,L2,L3,sz(nzx),sk(nkx),
@@ -90,7 +89,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 C!the vecto theo oz khi co dien truong ngoai theo phong oz
       FUNCTION eAz(t,om,tdu,eEz)   !(eV*fs/nm)
 	      sumz=0.0
-	      dt=0.001*(2*pi/om)
+	      dt=0.01*(2*pi/om)
 	      t1=-5*tdu
       DO WHILE (t1.le.t)
          sumz=sumz+dt*eEz
